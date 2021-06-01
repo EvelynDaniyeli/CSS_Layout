@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html lang='es'>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="descripcion" content="esta es mi primer pagina web"/>
+        <meta name="author" content="Evelyn Domm"/>
+        <meta name="keywords" content="mi primer titulo,mi primer pagina,pagina web"/>
+        <title>EJEMPLO CSS</title>
+        <style>
+             *
+            {
+                margin:0px;
+                padding: 0px;
+            }
+            header,footer,section,article,aside,nav,hgroup{
+                border:2px solid black;
+                padding: 10px;
+                margin:5px;
+            }
+            body{
+                background-color:#dcffff;
+                font-style: italic;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .agrupar{
+                width: 900px;
+                border: 1px solid black;
+                margin: 15px auto;
+            }
+            #hola{
+                padding: 20px;
+                background: linear-gradient(to bottom right, #84fab0,#8fd3f4);
+            }
+            #hola>h1{
+                text-align: center;
+                color:black;
+                margin: 2px;
+                padding: 5px;
+            }
+            #lado{
+            color:black;
+            padding:10px;
+            font-style: italic;
+            font-family: Arial, Helvetica, sans-serif;
+            }
+           nav{
+               line-height: 30px;
+               height: 50px;
+               border:2px solid black;
+               padding:15px;
+            }
+            nav ul li{
+                float: left;
+                list-style: none;
+                margin: 15px;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            }
+            .seccion{
+                float: left;
+                width: 70%;
+                min-height: 500px;
+                background: linear-gradient(to right, #a18cd1,#fbc2eb);
+            }
+            #lado{
+                float: right;
+                width: 20%;
+                min-height: 300px;
+                background: linear-gradient(to right, #5ee7df,#b490ca);
+            }
+            #lado>#a{
+                border:2px solid black;
+                padding:15px;
+            }
+            #lado>#b{
+                margin-top: 15px;
+                border:2px solid black;
+                padding:15px;
+            }
+            #abajo{
+                clear: both;
+                text-align: center;
+            }
+            #abajo>p{
+                font-display:initial;
+                font-size: 18px;
+            }
+        </style>
+    </head>
+        <body>
+            <div class="agrupar">
+                <header id="hola">
+                    <h1>EJEMPLO CSS</h1>
+                </header>
+                <nav>
+                    <ul>
+                        <li>Principal</li>
+                        <li>Ayuda</li>
+                        <li>Contacto</li>
+                    </ul>
+                </nav>
+                <section class="seccion">
+                    <article class="articulo">
+                        <hgroup>
+                            <h1>Primer articulo</h1>
+                            <h2>Subtitulo del primer articulo</h2>
+                        </hgroup>
+                        <time datetime="20-05-2021">Publicado 20-05-2021</time>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident odit atque soluta explicabo, porro, corrupti, consequatur necessitatibus aspernatur eum ratione enim molestias! Necessitatibus aut laboriosam temporibus deleniti voluptatibus ex enim!</p>
+                        <img src="11.jpg" alt="Aqui hay una imagen" width="200px" height="300px">
+                        <footer>
+                            <p>Comentarios (0)</p>
+                        </footer>
+                    </article>
+    
+                    <article class="articulo">
+                        <hgroup>
+                            <h1>Segundo articulo</h1>
+                            <h2>Subtitulo del segundo articulo</h2>
+                        </hgroup>
+                        <time datetime="20-05-2021">Publicado 20-05-2021</time>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex deserunt cum voluptate consequuntur, quos aut. Dolore neque repudiandae error ipsam ea asperiores eligendi libero? Nihil vel accusamus ullam quasi numquam.</p>
+                        <footer>
+                            <p>Comentarios (10)</p>
+                        </footer>
+                    </article> 
+                </section>
+    
+                <aside id="lado">
+                    <blockquote id="a">
+                       <a href="https://www.youtube.com/">Mensaje 1</a> 
+                    </blockquote>
+    
+                    <blockquote id="b" cite="http://facebook.com.hola">
+                        Mensaje 2
+                    </blockquote>
+                </aside>
+    
+                <footer id="abajo">
+                   <p>Derechos Reservados 2010-2021</p>
+                   <p>EVELYN DOMINGUEZ GONZALEZ 3A TIDSM</p>
+
+                </footer>
+            </div>
+           
+           
+        </body>
+
+</html>
+
+
+
+
+
